@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tipuri de personalitate</title>
+</head>
+<body>
+    <div class="vizualizare"> 
+    <header class="header">
+        <h1 id="title" class="centru">Test de personalitate</h1>
+        <p id="description" class="centru descriere">
+          Va rugam sa completati cu atentie urmatoarele date!
+        </p>
+    </header>
+
+    <form id="survey-form">
+        <div class="formular">
+          <label id="name-label" for="name">Nume</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="completare"
+            placeholder="Inserati numele"
+            required
+          />
+        </div>
+        <div class="formular">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="completare"
+            placeholder="Inserati email-ul"
+            required
+          />
+        </div>
+        <div class="formular">
+          <label id="number-label" for="number">Varsta</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="12"
+            max="100"
+            class="completare"
+            placeholder="Inserati varsta"
+            required
+          />
+        </div>
+
+
+        <div class="formular">
+          <p>Ce zodie sunteti?</p>
+          <select id="dropdown" name="role" class="completare" required>
+            <option disabled selected value>Selecteaza zodia</option>
+            <option value="berbec">Berbec</option>
+            <option value="taur">Taur</option>
+            <option value="leu">Leu</option>
+            <option value="balanta">Balanta</option>
+            <option value="scorpion">Scorpion</option>
+            <option value="sagetator">Sagetator</option>
+            <option value="pesti">Pesti</option>
+            <option value="gemeni">Gemeni</option>
+            <option value="rac">Rac</option>
+            <option value="fecioara">Fecioara</option>
+            <option value="capricorn">Capricorn</option>
+            <option value="varsator">Varsator</option>
+          </select>
+        </div>
+
+        <div class="formular">
+          <p>Ce fel de persoana considerati ca sunteti?</p>
+          <label>
+            <input
+              name="tip_persoana"
+              value="introvert"
+              type="radio"
+              class="input-radio"
+            />Introvertit
+          </label>
+
+          <label>
+            <input
+              name="tip_persoana"
+              value="extrovert"
+              type="radio"
+              class="input-radio"
+            />Extrovertit
+          </label>
+
+
+        <div class="formular">
+          <p>Ce va place cel mai mult la o persoana?</p>
+          <select id="preferinta" name="preferinta" class="completare" required>
+            <option disabled selected value>Selecteaza o optiune</option>
+            <option value="trupul">Trupul</option>
+            <option value="sufletul">Sufletul</option>
+            <option value="mintea">Mintea</option>
+            <option value="tot">Tot</option>
+          </select>
+        </div>
+
+        <div class="formular">
+          <p>Care sunt defectele pe care nu le suportati deloc?</p>
+
+          <label>
+            <input
+              name="optiune"
+              value="Mandria"
+              type="checkbox"
+              class="input-checkbox"
+            />Mandria
+          </label>
+          
+          <label>
+            <input
+              name="optiune"
+              value="Egoismul"
+              type="checkbox"
+              class="input-checkbox"
+            />Egoismul
+          </label>
+
+          <label>
+            <input
+              name="optiune"
+              value="Aroganta"
+              type="checkbox"
+              class="input-checkbox"
+            />Aroganta
+          </label>
+
+          <label>
+            <input
+              name="optiune"
+              value="Viclenia"
+              type="checkbox"
+              class="input-checkbox"
+            />Viclenia
+          </label>
+
+          <label>
+            <input
+              name="optiune"
+              value="Invidia"
+              type="checkbox"
+              class="input-checkbox"
+            />Invidia
+          </label>
+
+        <div class="formular">
+          <p>Alte nelamuriri...</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Te rog scrie aici supararea ta..."
+          ></textarea>
+        </div>
+
+        <div class="formular">
+          <input type="submit" id="submit" class="submit-button">
+        </input>
+        </div>
+      </form>
+
+
+      <footer>
+        <p>Pentru mai multe detalii:<br>
+        <a href="maimultedetalii@example.com">maimultedetalii@example.com</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>
